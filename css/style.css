@@ -46,33 +46,16 @@ a:hover {
 /* Branding / Header
    --------------------------------------------------- */
 #branding {
-  background: url('https://vanderwijk.com/wp-content/themes/vanderwijk/images/vanderwijk-logo.png') no-repeat right top #fff;
-  min-height: 90px;
-  overflow: hidden;
-  padding: 15px 15px 0;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
 }
 
-#site-title {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1.2;
-  padding-top: 8px;
-}
-
-#site-title a {
-  color: #333;
-  text-decoration: none;
-}
-
-#site-title a:hover {
-  color: #007cba;
-}
-
-#site-description {
-  color: #007cba;
-  font-size: 14px;
-  font-weight: 300;
-  margin-top: 4px;
+#branding img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Navigation
@@ -315,9 +298,8 @@ a:hover {
     border-right: none;
   }
 
-  #branding {
-    background-image: url('https://vanderwijk.com/wp-content/themes/vanderwijk/images/vanderwijk-logo-320.png');
-    min-height: 70px;
+  #branding img {
+    width: 320px;
   }
 
   .diensten-grid {
@@ -330,10 +312,8 @@ a:hover {
 }
 
 @media (max-width: 480px) {
-  #branding {
-    background-image: url('https://vanderwijk.com/wp-content/themes/vanderwijk/images/vanderwijk-logo-219.png');
-    min-height: 55px;
-    padding: 10px 10px 0;
+  #branding img {
+    width: 219px;
   }
 
   #access li a {
