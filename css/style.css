@@ -1,0 +1,347 @@
+/* ===================================================
+   Vanderwijk.nl – Stylesheet
+   Gebaseerd op het ontwerp van vanderwijk.com
+   =================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+/* Reset
+   --------------------------------------------------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Base
+   --------------------------------------------------- */
+body {
+  background: url('https://vanderwijk.com/wp-content/themes/vanderwijk/images/background.jpg') repeat fixed center top #6393c1;
+  color: #333;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+a {
+  color: #007cba;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Page container
+   --------------------------------------------------- */
+#page {
+  background: #fff;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  max-width: 700px;
+  margin: 20px auto 40px;
+}
+
+/* Branding / Header
+   --------------------------------------------------- */
+#branding {
+  background: url('https://vanderwijk.com/wp-content/themes/vanderwijk/images/vanderwijk-logo.png') no-repeat right top #fff;
+  min-height: 90px;
+  overflow: hidden;
+  padding: 15px 15px 0;
+}
+
+#site-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  padding-top: 8px;
+}
+
+#site-title a {
+  color: #333;
+  text-decoration: none;
+}
+
+#site-title a:hover {
+  color: #007cba;
+}
+
+#site-description {
+  color: #007cba;
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 4px;
+}
+
+/* Navigation
+   --------------------------------------------------- */
+#access {
+  background: linear-gradient(to bottom, #eeeeee 20%, #cccccc 100%);
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #bbb;
+}
+
+#access ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 5px;
+}
+
+#access li a {
+  display: block;
+  color: #666;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 8px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+#access li a:hover,
+#access li.current-menu-item a {
+  color: #007cba;
+  text-decoration: none;
+}
+
+/* Main content area
+   --------------------------------------------------- */
+#main {
+  padding: 20px 20px 10px;
+}
+
+/* Entry / Article
+   --------------------------------------------------- */
+.entry-header {
+  margin-bottom: 16px;
+}
+
+.entry-title {
+  color: #007cba;
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+  margin-bottom: 6px;
+}
+
+.entry-content p {
+  margin-bottom: 14px;
+}
+
+.entry-content h2 {
+  color: #007cba;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+  margin: 24px 0 10px;
+}
+
+.entry-content h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin: 18px 0 6px;
+}
+
+.entry-content ul {
+  margin: 0 0 14px 20px;
+}
+
+.entry-content ul li {
+  margin-bottom: 4px;
+}
+
+/* Diensten / services grid
+   --------------------------------------------------- */
+.diensten-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.dienst-item {
+  border: 1px solid #e2e2e2;
+  border-radius: 3px;
+  padding: 16px;
+}
+
+.dienst-item h3 {
+  color: #007cba;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+
+.dienst-item p {
+  font-size: 13px;
+  margin: 0;
+}
+
+/* Portfolio list
+   --------------------------------------------------- */
+.portfolio-list {
+  list-style: none;
+  margin: 10px 0 20px;
+  padding: 0;
+  columns: 2;
+  column-gap: 20px;
+}
+
+.portfolio-list li {
+  margin-bottom: 6px;
+  break-inside: avoid;
+}
+
+.portfolio-list li::before {
+  content: '›';
+  color: #f1b854;
+  font-weight: 600;
+  margin-right: 6px;
+}
+
+.portfolio-list a {
+  color: #333;
+  font-size: 13px;
+}
+
+.portfolio-list a:hover {
+  color: #007cba;
+}
+
+/* CTA button
+   --------------------------------------------------- */
+.btn {
+  display: inline-block;
+  background: linear-gradient(to bottom, #f1b854 0%, #da6a18 100%);
+  border: 1px solid #c05a10;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 18px;
+  text-decoration: none;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+}
+
+.btn:hover {
+  background: linear-gradient(to bottom, #f8c96a 0%, #e8751f 100%);
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Contact blok
+   --------------------------------------------------- */
+.contact-blok {
+  background: #f8f8f8;
+  border: 1px solid #e2e2e2;
+  border-radius: 3px;
+  padding: 16px;
+  margin: 20px 0;
+}
+
+.contact-blok p {
+  margin-bottom: 8px;
+}
+
+.contact-blok p:last-child {
+  margin-bottom: 0;
+}
+
+/* Supplementary / Footer widgets
+   --------------------------------------------------- */
+#supplementary {
+  background: #f0f0f0;
+  border-top: 1px solid #ddd;
+  padding: 20px;
+}
+
+.widget {
+  margin-bottom: 20px;
+}
+
+.widget:last-child {
+  margin-bottom: 0;
+}
+
+.widget-title {
+  color: #333;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+.widget ul {
+  list-style: none;
+  padding: 0;
+}
+
+.widget ul li {
+  margin-bottom: 5px;
+  font-size: 13px;
+}
+
+/* Site generator / Footer bar
+   --------------------------------------------------- */
+#site-generator {
+  background: url('https://vanderwijk.com/wp-content/themes/vanderwijk/images/footer.jpg') no-repeat right top #333;
+  border-radius: 0 0 4px 4px;
+  color: #aaa;
+  font-size: 11px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+}
+
+#site-generator a {
+  color: #ccc;
+}
+
+/* Responsive
+   --------------------------------------------------- */
+@media (max-width: 720px) {
+  #page {
+    margin: 0;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+  }
+
+  #branding {
+    background-image: url('https://vanderwijk.com/wp-content/themes/vanderwijk/images/vanderwijk-logo-320.png');
+    min-height: 70px;
+  }
+
+  .diensten-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-list {
+    columns: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  #branding {
+    background-image: url('https://vanderwijk.com/wp-content/themes/vanderwijk/images/vanderwijk-logo-219.png');
+    min-height: 55px;
+    padding: 10px 10px 0;
+  }
+
+  #access li a {
+    padding: 7px 8px;
+    font-size: 10px;
+  }
+
+  #main {
+    padding: 15px;
+  }
+}

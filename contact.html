@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – Vanderwijk</title>
+  <meta name="description" content="Neem contact op met Vanderwijk voor een vrijblijvend gesprek over uw WordPress website, webshop of webapplicatie.">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .contact-form label {
+      display: block;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 4px;
+      color: #555;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 13px;
+      font-weight: 300;
+      padding: 8px 10px;
+      margin-bottom: 14px;
+      color: #333;
+    }
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: #007cba;
+      outline: none;
+    }
+    .contact-form textarea {
+      height: 130px;
+      resize: vertical;
+    }
+  </style>
+</head>
+<body>
+<div id="page">
+
+  <header id="branding">
+    <h1 id="site-title"><a href="index.html">Vanderwijk</a></h1>
+    <p id="site-description">WordPress Websites &amp; Online Oplossingen</p>
+  </header>
+
+  <nav id="access">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="diensten.html">Diensten</a></li>
+      <li><a href="wordpress.html">WordPress</a></li>
+      <li class="current-menu-item"><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div id="main">
+    <article>
+      <header class="entry-header">
+        <h1 class="entry-title">Contact</h1>
+      </header>
+      <div class="entry-content">
+        <p>Benieuwd wat er voor jouw project mogelijk is? Neem gerust contact op voor een vrijblijvend gesprek. Er wordt zo snel mogelijk gereageerd.</p>
+
+        <div class="contact-blok">
+          <p><strong>E-mail:</strong> <a href="mailto:hallo@vanderwijk.nl">hallo@vanderwijk.nl</a></p>
+          <p><strong>Telefoon:</strong> <a href="tel:0644155199">06 441 551 99</a></p>
+        </div>
+
+        <h2>Stuur een bericht</h2>
+        <form class="contact-form" action="https://formspree.io/f/hallo@vanderwijk.nl" method="POST">
+          <label for="naam">Naam</label>
+          <input type="text" id="naam" name="naam" placeholder="Uw naam" required>
+
+          <label for="email">E-mailadres</label>
+          <input type="email" id="email" name="email" placeholder="uw@emailadres.nl" required>
+
+          <label for="onderwerp">Onderwerp</label>
+          <input type="text" id="onderwerp" name="onderwerp" placeholder="Waar gaat uw vraag over?">
+
+          <label for="bericht">Bericht</label>
+          <textarea id="bericht" name="bericht" placeholder="Beschrijf uw project of vraag…" required></textarea>
+
+          <button type="submit" class="btn">Verstuur bericht</button>
+        </form>
+      </div>
+    </article>
+  </div>
+
+  <footer id="colophon">
+    <div id="supplementary">
+      <div class="widget">
+        <h3 class="widget-title">Navigatie</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="diensten.html">Diensten</a></li>
+          <li><a href="wordpress.html">WordPress</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site-generator">
+      <span>&copy; 2025 Vanderwijk &mdash; WordPress Websites &amp; Online Oplossingen</span>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
